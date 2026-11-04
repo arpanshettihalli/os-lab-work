@@ -7,6 +7,7 @@ void* routine(void *arg)
 {
 for(int i=0;i<1000000;i++)
 {	pthread_mutex_lock(&mutex);
+pthread_mutex_lock(&mutex);
 	x++;
 	pthread_mutex_unlock(&mutex);
 }
